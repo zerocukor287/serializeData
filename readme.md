@@ -1,4 +1,4 @@
-# Simple data serilization example using C++ with only std
+# Simple data serialization example using C++ with only standard library
 
 ## When to use
 This example serve as an inspiration in case you want to write an array of variable size of structures into a binary file and later read them.
@@ -24,8 +24,8 @@ Use `ofstream` to write your data then open it with an `ifstream`. Writing and r
 3. The `structure` should not end with the `string`
 
 ## Consequences
-It is not possible to write to binary then read structures only containing `string` members (use text file instead of binary). Contraint #3.  
+It is not possible to write to binary then read structures only containing `string` members (constraint #3).  
 Writing data from raw user input is not recommended as it  
-a) might contain the delimiter (contraint #1) 
-b) might be 'infinite' long (contraint #2)
+a) might contain the delimiter (constraint #1) 
+b) might be 'infinite' long (constraint #2)
 therefore invalidating the read.
